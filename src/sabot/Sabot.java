@@ -1,8 +1,9 @@
 package sabot;
 import cartes.*;
 import java.lang.Exception;
+import java.util.Iterator;
 
-public class Sabot {
+public class Sabot implements Iterator<Carte> {
 	
 	private int nbCartes;
 	private Carte[] tab;
@@ -30,7 +31,7 @@ public class Sabot {
 			next_exist = true;
 			return carte_i;
 		} else {
-			throw new IllegalStateException();
+			throw new IllegalStateException("erreur next()");
 		}
 		
 	}
@@ -48,8 +49,9 @@ public class Sabot {
 		
 	}
 	public Carte piocher() {
+		Carte carte = next();
 		remove();
-		return next();
+		return carte;
 	}
 	
 	
@@ -58,6 +60,7 @@ public class Sabot {
 			throw new IllegalArgumentException("tableau plein");
 		} else {
 			this.tab[nbCartes] = carte; 
+			nbCartes++;
 		}
 	}
 	

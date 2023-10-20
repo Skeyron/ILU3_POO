@@ -2,7 +2,7 @@ package cartes;
 
 //import cartes.Carte.Probleme.Bataille;
 
-public abstract class Attaque extends Bataille {
+public class Attaque extends Bataille {
 
 	public Attaque(int nombre, Type type) {
 		super(nombre, type);

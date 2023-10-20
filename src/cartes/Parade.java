@@ -2,9 +2,9 @@ package cartes;
 
 //import cartes.Carte.Problement.Bataille;
 
-public class PArade extends Bataille {
+public class Parade extends Bataille {
 
-	public PArade(int nombre, Type type) {
+	public Parade(int nombre, Type type) {
 		super(nombre, type);
 	}
 	
