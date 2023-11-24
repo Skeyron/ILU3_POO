@@ -3,7 +3,7 @@ package cartes;
 public abstract class Probleme extends Carte {
 
 	public enum Type {FEU, ESSENCE, CREVAISON, ACCIDENT}
-	private Type type;
+	protected Type type;
 
 	public Probleme(int nombre, Type type) {
 		super(nombre);
@@ -13,5 +13,14 @@ public abstract class Probleme extends Carte {
 	public Type getType() {
 		return type;
 	}
+	
+	public boolean equals(Object obj) {
+		if(obj instanceof Botte){
+			Probleme problem = (Probleme) obj;
+			 return type.equals(problem.getType());
+		}
+		return false;
+	}
+	
 	
 }
