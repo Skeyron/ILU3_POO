@@ -2,7 +2,7 @@ package testFonctionnels;
 
 
 import cartes.*;
-import cartes.Probleme.Type;
+
 import sabot.Sabot;
 
 public class SabotTest {

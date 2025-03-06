@@ -1,14 +1,8 @@
 package cartes;
 
 public abstract class Carte {
-	protected int nombre;
 
-	public Carte(int nombre) {
-		this.nombre = nombre;
+	protected Carte() {
 	}
-	
-	public int getNombre() {
-		return nombre;
-	}
-
+	 
 }

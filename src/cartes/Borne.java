@@ -4,8 +4,7 @@ public class Borne extends Carte {
 	
 	int km;
 
-	public Borne(int nombre, int km) {
-		super(nombre);
+	public Borne(int km) {
 		this.km = km;
 	}
 	
@@ -38,7 +37,7 @@ public class Borne extends Carte {
 			nom = "100";
 			break;
 		case 200:
-			nom = "200";
+			nom = "200" 	;
 			break;
 		}
 		return nom;

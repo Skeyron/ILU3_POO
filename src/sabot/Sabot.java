@@ -64,19 +64,19 @@ public class Sabot implements Iterator<Carte> {
 		}
 	}
 	
-	public void	ajouterFamille(Carte carte) {
-		for (int i = 0; i < carte.getNombre(); i++) {
-			try {
-				ajouterCarte(carte);
-			} catch (Exception e) {
-				e.printStackTrace();
-			} 
-		}
-	}
-	
-	public void	ajouterFamille(Carte[] carte) {
-		for (int i = 0; i < carte.length; i++) {
-			ajouterFamille(carte[i]);
-		}
-	}
+//	public void	ajouterFamille(Carte carte) {
+//		for (int i = 0; i < carte.getNombre(); i++) {
+//			try {
+//				ajouterCarte(carte);
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			} 
+//		}
+//	}
+//	
+//	public void	ajouterFamille(Carte[] carte) {
+//		for (int i = 0; i < carte.length; i++) {
+//			ajouterFamille(carte[i]);
+//		}
+//	}
 }
