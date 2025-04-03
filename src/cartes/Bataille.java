@@ -8,4 +8,8 @@ public abstract class Bataille extends Probleme {
 		super(type);
 	}
 	
+	
+	
+	
+	
 }
